@@ -1,0 +1,62 @@
+[
+    {
+        "id": "painting-01",
+        "title": "Midnight Beacon.exe",
+        "style": "Vaporwave",
+        "prompt": "A vaporwave aesthetic beach view at night, looking down from the balcony of a lighthouse. The ocean waves are glowing neon teal with a low-poly wireframe grid texture. A brilliant pink and purple neon beam shoots from the lighthouse across the dark water. The sky is a digital violet with a pixelated crescent moon, and a few glowing neon palm trees line the pastel purple sand below."
+    },
+    {
+        "id": "painting-02",
+        "title": "Aura of the New Dawn",
+        "style": "Fruitger Aero",
+        "prompt": "Frutiger Aero aesthetic, a sprawling eco-futuristic city under a pristine bright blue sky with wispy white clouds. In the foreground, hyper-glossy green grass hills feature floating transparent glass spheres and oversized, perfect water droplets. A clean, glistening stream of turquoise water cuts through the landscape, populated by vibrant koi fish. The background shows sleek, white-and-glass skyscrapers integrated with vertical gardens, illuminated by clean solar glare and a subtle lens flare."
+    },
+    {
+        "id": "painting-03",
+        "title": "The Hallway of Last Tuesday",
+        "style": "Dream Core",
+        "prompt": "A low-angle, flash-photography style image capturing an empty, endlessly long hotel hallway at night. The hallway is carpeted with a repeating, confusing 1990s pattern. All the doors lining the hallway are identical and closed. Fluorescent lights flicker overhead, casting a sickening pale yellow light. A single, stylized, simplistic blue balloon animal floats mysteriously against the ceiling. The perspective is distorted, with the hallway seemingly stretching into infinite darkness. The overall mood is unsettling, nostalgic, and eerie."
+    },
+    {
+        "id": "painting-04",
+        "title": "System Reboot 1999",
+        "style": "Y2K",
+        "prompt": "Y2K futurism aesthetic. A sleek, high-tech bedroom filled with late-1990s technology. A desktop computer monitor made of translucent bright blue plastic sits on a metallic silver desk. The room is illuminated by a cool blue backlighting and glowing digital matrix codes on the screens. Cybernetic textures, glossy CD-ROMs scattering light, and inflatable furniture fill the space, creating an optimistic, millennial cyber-oasis vibe."
+    },
+    {
+        "id": "painting-05",
+        "title": "Neon Resistor",
+        "style": "Cyberpunk",
+        "prompt": "Cyberpunk aesthetic. A rain-slicked, narrow alleyway in a hyper-dense futuristic metropolis at night. Colossal neon billboards in vivid pink, electric blue, and toxic green loom overhead, reflecting off puddles on the cracked asphalt. A street-level hacker wearing a dark tech-wear jacket stands next to a glowing, heavily modified vending machine, their cybernetic visor reflecting the neon glare. Drones hum softly in the air between crowded, cables-tangled apartment blocks."
+    },
+    {
+        "id": "painting-06",
+        "title": "Datamoshed Memory",
+        "style": "Glitchcore",
+        "prompt": "A high-contrast, maximalist Glitchcore portrait centered on a digital face made entirely of corrupted data. The image is a mosaic of intense neon pink, electric blue, and harsh yellow pixel blocks, horizontal scanline interference, and heavy datamoshing artifacts. The figure's eyes are represented by glowing, pixel-sorted static. The background is a broken, flashing grid pattern with fragmented text that reads 'ERROR 404' and 'CORRUPTED MEMORY' overlapping and dissolving into static. The whole composition is chaotic, noisy, and aggressively pixelated, looking like a distorted VHS tape being fast-forwarded on a modern screen."
+    },
+    {
+        "id": "painting-007",
+        "title": "The Echo of Departure",
+        "style": "Liminal Spaces",
+        "prompt": "A liminal space aesthetic. A completely empty, vast indoor shopping mall from the late 1990s at night, seen from a straight-on, symmetrical perspective. The floor is covered in high-gloss white tiles that perfectly reflect the soft, pale overhead fluorescent lights. There are no people, no signs of life, and the storefronts are dark and shuttered. In the center of the frame sits a lonely, built-in concrete planter holding a single, artificial plastic palm tree. The lighting is slightly washed out, mimicking low-quality flash photography, creating a deeply nostalgic, quiet, and eerie atmosphere."
+    },
+    {
+        "id": "painting-08",
+        "title": "The Mossy Monarch",
+        "style": "Frogcore",
+        "prompt": "Frogcore aesthetic. A close-up, detailed macro shot of a small, bright green tree frog wearing a tiny, perfectly crafted crown made of a single acorn cap. The frog is sitting comfortably on a thick, vibrant green patch of wet moss next to a tiny wild mushroom. In the background, soft rain drops create gentle ripples in a shallow puddle, and the dense forest floor is softly blurred with warm, dappled sunlight filtering through fern leaves."
+    },
+    {
+        "id": "painting-09",
+        "title": "The Hearthside Solace",
+        "style": "Cottagecore",
+        "prompt": "Cottagecore aesthetic. An atmospheric, warm view inside a rustic, cozy wooden cabin kitchen during the golden hour. Sunbeams cut through a small multi-pane window, illuminating dust motes in the air. On a heavy oak table sits a fresh loaf of sourdough bread next to a steaming vintage porcelain teapot decorated with floral patterns. Jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, and a small vase of fresh wildflowers decorate the warm, inviting space."
+    },
+    {
+        "id": "painting-10",
+        "title": "The Hearthside Solace",
+        "style": "Cottagecore",
+        "prompt": "Cottagecore aesthetic. An atmospheric, warm view inside a rustic, cozy wooden cabin kitchen during the golden hour. Sunbeams cut through a small multi-pane window, illuminating dust motes in the air. On a heavy oak table sits a fresh loaf of sourdough bread next to a steaming vintage porcelain teapot decorated with floral patterns. Jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, and a small vase of fresh wildflowers decorate the warm, inviting space."
+    }
+]
