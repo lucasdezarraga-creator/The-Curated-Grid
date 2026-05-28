@@ -33,34 +33,45 @@ def main():
         file_name = f"{painting_id}.png"
         target = output_image_dir / file_name
 
-        # Smart Skip: This will safely skip painting-01, 02, and 03 since you already have them!
+        # Smart Skip: This skips 1, 2, 3, 4, and 5 since you already have them!
         if target.exists():
-            print(f"⏩ [{i}/{len(paintings)}] Skipping '{file_name}' (File already exists).")
+            print(f"⏩ [{i}/{len(paintings)}] Skipping '{file_name}' (Already exists).")
             continue
 
-        print(f"🎨 [{i}/{len(paintings)}] Generating asset for \"{item.get('title', painting_id)}\"...")
-        prompt = urllib.parse.quote(painting_prompt)
+        print(f"🎨 [{i}/{len(paintings)}] Generating asset via alternative mirror for \"{item.get('title', painting_id)}\"...")
         
-        # Using the standard, completely unrestricted default engine path
-        image_url = f"https://image.pollinations.ai/p/{prompt}?width=1024&height=1024&nologo=true"
+        # We clean and encode the prompt text
+        encoded_prompt = urllib.parse.quote(painting_prompt)
+        
+        # Using an alternative open infrastructure mirror that uses Flux/Stable Diffusion behind the scenes
+        image_url = f"https://api.airforce/v1/image/generations?prompt={encoded_prompt}&model=flux&size=1:1"
 
         try:
-            response = requests.get(image_url, timeout=45)
+            # We set a slightly shorter timeout because this mirror responds quickly
+            response = requests.get(image_url, timeout=30)
+            
             if response.status_code == 200:
                 with open(target, "wb") as img_file:
                     img_file.write(response.content)
                 print(f"   ✅ Saved -> public/images/{file_name}")
-                
-                # Take a breath for 3 seconds so the server stays happy
-                print("   ⏳ Pausing briefly to avoid rate limits...")
-                time.sleep(3)
+                # 2 second breath
+                time.sleep(2)
             else:
-                print(f"   ❌ Server Issue: Couldn't render {file_name}. Status: {response.status_code}")
-                print("   ⏳ Pausing longer to clear server flags...")
-                time.sleep(5)
+                print(f"   ❌ Mirror Issue: Status {response.status_code}. Trying fallback...")
+                # Fallback to a secondary fast prompt engine if primary is busy
+                fallback_url = f"https://image.pollinations.ai/p/{encoded_prompt}?width=1024&height=1024&seed={i}&nologo=true"
+                response = requests.get(fallback_url, timeout=30)
+                if response.status_code == 200:
+                    with open(target, "wb") as img_file:
+                        img_file.write(response.content)
+                    print(f"   ✅ Saved via Fallback -> public/images/{file_name}")
+                    time.sleep(3)
+                else:
+                    print(f"   ❌ Both endpoints rejected the request. Moving to next asset.")
+                    
         except Exception as e:
             print(f"   💥 Connection Error on {file_name}: {e}")
-            time.sleep(5)
+            time.sleep(2)
 
     print("\n🚀 Asset sync complete! Your React frontend is now fully populated.")
 
