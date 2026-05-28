@@ -5,7 +5,7 @@ import requests
 from pathlib import Path
 
 def main():
-    script_dir = (__file__).parent
+    script_dir = Path(__file__).parent
     root_dir = script_dir.parent
 
     json_path = root_dir / "public" / "data" / "The_Curated_Grid_painting_data.json"
