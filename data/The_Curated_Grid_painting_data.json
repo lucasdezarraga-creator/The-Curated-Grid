@@ -58,5 +58,35 @@
         "title": "The Hearthside Solace",
         "style": "Cottagecore",
         "prompt": "Cottagecore aesthetic. An atmospheric, warm view inside a rustic, cozy wooden cabin kitchen during the golden hour. Sunbeams cut through a small multi-pane window, illuminating dust motes in the air. On a heavy oak table sits a fresh loaf of sourdough bread next to a steaming vintage porcelain teapot decorated with floral patterns. Jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, and a small vase of fresh wildflowers decorate the warm, inviting space."
+    },
+    {
+        "id": "painting-11",
+        "title": "Playtime Protocol",
+        "style": "Kidcore",
+        "prompt": "Kidcore aesthetic. A close-up, hyper-saturated bedroom scene drenched in primary colors. In the center, a retro translucent neon-green alarm clock with large, goofy purple numbers sits next to a glowing, active transparent purple electronic handheld pet game on a rainbow-striped bedsheet. The floor is cluttered with brightly colored plastic building blocks, a scattered deck of holographic trading cards, and a plush colorful toy. The sunlight streaming through the window is intense and cheerful, highlighting glitter textures in the air. The overall image has a nostalgic, loud, and joyful 1990s childhood afternoon vibe."
+    },
+    {
+        "id": "painting-12",
+        "title": "Playtime Protocol",
+        "style": "Kidcore",
+        "prompt": "Kidcore aesthetic. A close-up, hyper-saturated bedroom scene drenched in primary colors. In the center, a retro translucent neon-green alarm clock with large, goofy purple numbers sits next to a glowing, active transparent purple electronic handheld pet game on a rainbow-striped bedsheet. The floor is cluttered with brightly colored plastic building blocks, a scattered deck of holographic trading cards, and a plush colorful toy. The sunlight streaming through the window is intense and cheerful, highlighting glitter textures in the air. The overall image has a nostalgic, loud, and joyful 1990s childhood afternoon vibe."
+    },
+    {
+        "id": "painting-13",
+        "title": "Angular Horizon",
+        "style": "Low Poly",
+        "prompt": "Low poly aesthetic. A beautiful, minimalist mountain landscape at sunset. The entire scene is constructed from large, visible, flat-shaded geometric triangles and polygons. A sharp, faceted river snakes through angular pine trees made of simple green pyramids. The sky features a gradient of low-polygon crystalline clouds shifting from deep orange to soft violet, with a low-res glowing sun casting sharp, blocky shadows across the geometric terrain."
+    },
+    {
+        "id": "painting-14",
+        "title": "The Atrium Eternal",
+        "style": "Mallsoft",
+        "prompt": "Mallsoft aesthetic. A vast, multi-level indoor shopping mall atrium from the late 1980s, shot from a slightly low angle to emphasize scale. The architecture features soft pastel pink and mint green marble columns, with glowing neon pink accents running along the escalators. In the center, a multi-tiered indoor stone fountain gently splashes water, surrounded by lush potted ferns and palm trees. A massive glass pyramid skylight serves as the ceiling, showing a soft twilight purple sky outside. The entire scene has a warm, hazy, dreamy VHS quality, evoking a sense of ultimate nostalgia and retail luxury."
+    },
+    {
+        "id": "painting-15",
+        "title": "The Architecture of Silence",
+        "style": "Minimalism",
+        "prompt": "Minimalism aesthetic. A pristine, empty white gallery space with a single, smooth, dark charcoal gray concrete bench positioned perfectly off-center. A vast expanse of smooth, matte white wall dominates the frame, interrupted only by a sharp, thin line of natural shadow cast by an unseen window. The floor is a seamless, light gray polished concrete. The lighting is soft, diffused, and natural, emphasizing clean lines, geometric simplicity, and an overwhelming sense of quiet, calm, and empty negative space."
     }
 ]
