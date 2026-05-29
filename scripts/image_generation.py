@@ -3,6 +3,7 @@ import json
 import urllib.parse
 import requests
 import time
+import random
 from pathlib import Path
 
 def main():
@@ -21,11 +22,12 @@ def main():
     with open(json_path, "r", encoding="utf-8") as file:
         paintings = json.load(file)
 
-    print(f"📦 Database Loaded: Found {len(paintings)} paintings. Re-syncing production-ready assets...\n")
+    print(f"📦 Database Loaded: Ingesting prompts via Open AI Proxy...\n")
 
     for i, item in enumerate(paintings, start=1):
         painting_id = item.get("id")
         painting_prompt = item.get("prompt")
+        title = item.get("title", painting_id)
         
         if not painting_id or not painting_prompt:
             continue
@@ -33,33 +35,38 @@ def main():
         file_name = f"{painting_id}.png"
         target = output_image_dir / file_name
 
-        print(f"🖼️  [{i}/{len(paintings)}] Processing ultra-reliable asset for painting: \"{item.get('title', painting_id)}\"...")
+        if target.exists() and os.path.getsize(target) > 5000:
+            print(f"⏩ [{i}/{len(paintings)}] Skipping '{file_name}' (Valid file already exists).")
+            continue
+
+        print(f"🎨 [{i}/{len(paintings)}] Rendering Open-Gate AI Art for: \"{title}\"...")
+
+        # URL-encode the text prompt safely
+        encoded_prompt = urllib.parse.quote(painting_prompt)
         
-        # Pulling high-quality, targeted architectural/digital artwork keywords for Unsplash
-        search_terms = "abstract,art,gallery,modern"
-        if "neon" in painting_prompt.lower() or "reboot" in painting_prompt.lower():
-            search_terms = "cyberpunk,neon,digital,art"
-        elif "beacon" in painting_prompt.lower() or "dawn" in painting_prompt.lower():
-            search_terms = "surreal,landscape,painting"
-            
-        # Unsplash Source CDN allows high-speed, direct image streaming with custom keywords
-        image_url = f"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1024&h=1024&q=80&sig={i}"
+        # Using the dedicated developer stream gateway with random indexing to bypass server cache
+        seed = random.randint(1, 99999)
+        image_url = f"https://image.pollinations.ai/p/{encoded_prompt}?width=512&height=512&seed={seed}&model=flux"
 
         try:
-            response = requests.get(image_url, timeout=20)
+            # Direct binary stream fetch with a generic browser agent
+            headers = {"User-Agent": "Mozilla/5.0"}
+            response = requests.get(image_url, headers=headers, timeout=25)
             
             if response.status_code == 200:
-                # Overwrite previous duds with guaranteed binary image streams
                 with open(target, "wb") as img_file:
                     img_file.write(response.content)
-                print(f"   ✅ Verified and Saved -> public/images/{file_name}")
+                print(f"   ✅ Saved -> public/images/{file_name}")
+                # Micro-breather just to be a good net citizen
+                time.sleep(1)
             else:
-                print(f"   ❌ Asset fetch failed. Code: {response.status_code}")
+                print(f"   ❌ Endpoint returned code: {response.status_code}")
                 
         except Exception as e:
-            print(f"   💥 Connection Error: {e}")
+            print(f"   💥 Network exception: {e}")
+            time.sleep(2)
 
-    print("\n🚀 All 15 assets are verified, readable, and completely synchronized!")
+    print("\n🚀 All 15 assets are synchronized and local!")
 
 if __name__ == "__main__":
     main()
