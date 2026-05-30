@@ -1,10 +1,9 @@
-﻿import os
+﻿$code = @'
+import os
 import json
-import urllib.parse
-import requests
-import time
-import random
+import torch
 from pathlib import Path
+from diffusers import AutoPipelineForText2Image
 
 def main():
     script_dir = Path(__file__).parent
@@ -22,7 +21,31 @@ def main():
     with open(json_path, "r", encoding="utf-8") as file:
         paintings = json.load(file)
 
-    print(f"📦 Database Loaded: Ingesting prompts via Open AI Proxy...\n")
+    print("🤖 Initializing Local On-Device AI Engine...")
+    
+    # Auto-detect hardware acceleration (CUDA for NVIDIA, CPU for standard machines)
+    if torch.cuda.is_available():
+        device = "cuda"
+        torch_dtype = torch.float16
+        print("🚀 NVIDIA Graphics Core Detected! Enabling GPU acceleration.")
+    else:
+        device = "cpu"
+        torch_dtype = torch.float32
+        print("💻 Standard Hardware Detected. Running engine via system processor safely.")
+
+    try:
+        # Load a highly efficient, single-step local AI pipeline
+        pipe = AutoPipelineForText2Image.from_pretrained(
+            "stabilityai/sdxl-turbo", 
+            torch_dtype=torch_dtype, 
+            variant="fp16" if device == "cuda" else None
+        ).to(device)
+        print("✅ AI Model Loaded into hardware memory successfully!\n")
+    except Exception as e:
+        print(f"💥 Failed to load model framework: {e}")
+        return
+
+    print(f"📦 Database Loaded: Processing {len(paintings)} prompts completely offline...\n")
 
     for i, item in enumerate(paintings, start=1):
         painting_id = item.get("id")
@@ -39,34 +62,29 @@ def main():
             print(f"⏩ [{i}/{len(paintings)}] Skipping '{file_name}' (Valid file already exists).")
             continue
 
-        print(f"🎨 [{i}/{len(paintings)}] Rendering Open-Gate AI Art for: \"{title}\"...")
-
-        # URL-encode the text prompt safely
-        encoded_prompt = urllib.parse.quote(painting_prompt)
-        
-        # Using the dedicated developer stream gateway with random indexing to bypass server cache
-        seed = random.randint(1, 99999)
-        image_url = f"https://image.pollinations.ai/p/{encoded_prompt}?width=512&height=512&seed={seed}&model=flux"
+        print(f"🎨 [{i}/{len(paintings)}] Rendering local AI art for: \"{title}\"...")
 
         try:
-            # Direct binary stream fetch with a generic browser agent
-            headers = {"User-Agent": "Mozilla/5.0"}
-            response = requests.get(image_url, headers=headers, timeout=25)
+            # Generate the image locally using 1 single super-step
+            result = pipe(
+                prompt=painting_prompt, 
+                num_inference_steps=1, 
+                guidance_scale=0.0,
+                width=512,
+                height=512
+            )
             
-            if response.status_code == 200:
-                with open(target, "wb") as img_file:
-                    img_file.write(response.content)
-                print(f"   ✅ Saved -> public/images/{file_name}")
-                # Micro-breather just to be a good net citizen
-                time.sleep(1)
-            else:
-                print(f"   ❌ Endpoint returned code: {response.status_code}")
+            image = result.images[0]
+            image.save(target)
+            print(f"   ✅ Saved locally -> public/images/{file_name}")
                 
         except Exception as e:
-            print(f"   💥 Network exception: {e}")
-            time.sleep(2)
+            print(f"   ❌ Generation failed for this item: {e}")
 
-    print("\n🚀 All 15 assets are synchronized and local!")
+    print("\n🚀 All AI assets have been successfully created locally on your machine!")
 
 if __name__ == "__main__":
     main()
+'@
+
+Out-File -FilePath .\image_generation.py -InputObject $code -Encoding utf8
