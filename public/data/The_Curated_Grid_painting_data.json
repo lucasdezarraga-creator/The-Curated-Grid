@@ -1,92 +1,92 @@
 [
     {
-        "id": "painting-01",
+        "id": "painting-1",
         "title": "Midnight Beacon.exe",
         "style": "Vaporwave",
-        "prompt": "A vaporwave aesthetic beach view at night, looking down from the balcony of a lighthouse. The ocean waves are glowing neon teal with a low-poly wireframe grid texture. A brilliant pink and purple neon beam shoots from the lighthouse across the dark water. The sky is a digital violet with a pixelated crescent moon, and a few glowing neon palm trees line the pastel purple sand below."
+        "prompt": "vaporwave aesthetic, lighthouse balcony view, looking down at beach, night. ocean waves, glowing neon teal, low-poly wireframe grid texture. brilliant pink purple neon beam shooting across dark water. digital violet sky, pixelated crescent moon. neon palm trees, pastel purple sand. 80s synthwave, retrowave style."
     },
     {
-        "id": "painting-02",
+        "id": "painting-2",
         "title": "Aura of the New Dawn",
         "style": "Fruitger Aero",
-        "prompt": "Frutiger Aero aesthetic, a sprawling eco-futuristic city under a pristine bright blue sky with wispy white clouds. In the foreground, hyper-glossy green grass hills feature floating transparent glass spheres and oversized, perfect water droplets. A clean, glistening stream of turquoise water cuts through the landscape, populated by vibrant koi fish. The background shows sleek, white-and-glass skyscrapers integrated with vertical gardens, illuminated by clean solar glare and a subtle lens flare."
+        "prompt": "Frutiger Aero aesthetic, eco-futuristic city, pristine bright blue sky, wispy white clouds. hyper-glossy green grass hills, floating transparent glass spheres, oversized perfect water droplets. glistening turquoise stream, vibrant koi fish. sleek white glass skyscrapers, vertical gardens, clean solar glare, subtle lens flare. glossy textures, 2000s core."
     },
     {
-        "id": "painting-03",
+        "id": "painting-3",
         "title": "The Hallway of Last Tuesday",
         "style": "Dream Core",
-        "prompt": "A low-angle, flash-photography style image capturing an empty, endlessly long hotel hallway at night. The hallway is carpeted with a repeating, confusing 1990s pattern. All the doors lining the hallway are identical and closed. Fluorescent lights flicker overhead, casting a sickening pale yellow light. A single, stylized, simplistic blue balloon animal floats mysteriously against the ceiling. The perspective is distorted, with the hallway seemingly stretching into infinite darkness. The overall mood is unsettling, nostalgic, and eerie."
+        "prompt": "low-angle flash-photography, dream core style, empty endless hotel hallway, night. repeating confusing 1990s carpet, identical closed doors. flickering fluorescent overheads, sickly pale yellow glow. single simple blue balloon animal floating at ceiling. distorted perspective, stretching into infinite darkness. unsettling nostalgic liminal space, eerie mood"
     },
     {
-        "id": "painting-04",
+        "id": "painting-4",
         "title": "System Reboot 1999",
         "style": "Y2K",
-        "prompt": "Y2K futurism aesthetic. A sleek, high-tech bedroom filled with late-1990s technology. A desktop computer monitor made of translucent bright blue plastic sits on a metallic silver desk. The room is illuminated by a cool blue backlighting and glowing digital matrix codes on the screens. Cybernetic textures, glossy CD-ROMs scattering light, and inflatable furniture fill the space, creating an optimistic, millennial cyber-oasis vibe."
+        "prompt": "Y2K futurism aesthetic, high-tech bedroom, late-1990s technology. translucent bright blue plastic desktop monitor, metallic silver desk. cool blue backlighting, glowing digital matrix codes on screens. cybernetic textures, glossy scattering CD-ROMs, inflatable furniture. optimistic millennial cyber-oasis vibe. retro-futuristic, cyberpunk 2000s core."
     },
     {
-        "id": "painting-05",
+        "id": "painting-5",
         "title": "Neon Resistor",
         "style": "Cyberpunk",
-        "prompt": "Cyberpunk aesthetic. A rain-slicked, narrow alleyway in a hyper-dense futuristic metropolis at night. Colossal neon billboards in vivid pink, electric blue, and toxic green loom overhead, reflecting off puddles on the cracked asphalt. A street-level hacker wearing a dark tech-wear jacket stands next to a glowing, heavily modified vending machine, their cybernetic visor reflecting the neon glare. Drones hum softly in the air between crowded, cables-tangled apartment blocks."
+        "prompt": "cyberpunk aesthetic, rain-slicked narrow alleyway, hyper-dense futuristic metropolis, night. colossal neon billboards, vivid pink electric blue toxic green, reflecting in puddles, cracked asphalt. street-level hacker, dark tech-wear jacket, cybernetic visor. glowing heavily modified vending machine. drones humming, crowded cables-tangled apartment blocks, dystopian cityscape."
     },
     {
-        "id": "painting-06",
+        "id": "painting-6",
         "title": "Datamoshed Memory",
         "style": "Glitchcore",
-        "prompt": "A high-contrast, maximalist Glitchcore portrait centered on a digital face made entirely of corrupted data. The image is a mosaic of intense neon pink, electric blue, and harsh yellow pixel blocks, horizontal scanline interference, and heavy datamoshing artifacts. The figure's eyes are represented by glowing, pixel-sorted static. The background is a broken, flashing grid pattern with fragmented text that reads 'ERROR 404' and 'CORRUPTED MEMORY' overlapping and dissolving into static. The whole composition is chaotic, noisy, and aggressively pixelated, looking like a distorted VHS tape being fast-forwarded on a modern screen."
+        "prompt": "high-contrast maximalist Glitchcore portrait, digital face, corrupted data. neon pink electric blue harsh yellow pixel blocks, scanline interference, datamoshing. glowing pixel-sorted static eyes. flashing grid background, text ERROR 404, CORRUPTED MEMORY. chaotic noisy pixelated distorted VHS style."
     },
     {
-        "id": "painting-007",
+        "id": "painting-7",
         "title": "The Echo of Departure",
         "style": "Liminal Spaces",
-        "prompt": "A liminal space aesthetic. A completely empty, vast indoor shopping mall from the late 1990s at night, seen from a straight-on, symmetrical perspective. The floor is covered in high-gloss white tiles that perfectly reflect the soft, pale overhead fluorescent lights. There are no people, no signs of life, and the storefronts are dark and shuttered. In the center of the frame sits a lonely, built-in concrete planter holding a single, artificial plastic palm tree. The lighting is slightly washed out, mimicking low-quality flash photography, creating a deeply nostalgic, quiet, and eerie atmosphere."
+        "prompt": "liminal space aesthetic, empty vast indoor shopping mall, 1990s, night, symmetrical straight-on perspective. high-gloss white floor tiles, soft pale fluorescent reflections. dark shuttered storefronts, no people. center frame lonely concrete planter, single artificial plastic palm tree. washed-out low-quality flash photography lighting, deeply nostalgic quiet eerie atmosphere."
     },
     {
-        "id": "painting-08",
+        "id": "painting-8",
         "title": "The Mossy Monarch",
         "style": "Frogcore",
-        "prompt": "Frogcore aesthetic. A close-up, detailed macro shot of a small, bright green tree frog wearing a tiny, perfectly crafted crown made of a single acorn cap. The frog is sitting comfortably on a thick, vibrant green patch of wet moss next to a tiny wild mushroom. In the background, soft rain drops create gentle ripples in a shallow puddle, and the dense forest floor is softly blurred with warm, dappled sunlight filtering through fern leaves."
+        "prompt": "Frogcore aesthetic, detailed macro shot, close-up bright green tree frog. frog wearing tiny acorn cap crown, sitting on thick vibrant patch of wet moss, tiny wild mushroom. background soft rain drops, gentle ripples in shallow puddle. dense forest floor, softly blurred bokeh, warm dappled sunlight filtering through fern leaves."
     },
     {
-        "id": "painting-09",
+        "id": "painting-9",
         "title": "The Hearthside Solace",
         "style": "Cottagecore",
-        "prompt": "Cottagecore aesthetic. An atmospheric, warm view inside a rustic, cozy wooden cabin kitchen during the golden hour. Sunbeams cut through a small multi-pane window, illuminating dust motes in the air. On a heavy oak table sits a fresh loaf of sourdough bread next to a steaming vintage porcelain teapot decorated with floral patterns. Jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, and a small vase of fresh wildflowers decorate the warm, inviting space."
+        "prompt": "Cottagecore aesthetic, cozy rustic wooden cabin kitchen interior, golden hour. sunbeams cutting through small multi-pane window, illuminating dust motes. heavy oak table, fresh sourdough bread loaf, steaming vintage floral porcelain teapot. jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, fresh wildflowers. warm inviting atmosphere."
     },
     {
         "id": "painting-10",
-        "title": "The Hearthside Solace",
-        "style": "Cottagecore",
-        "prompt": "Cottagecore aesthetic. An atmospheric, warm view inside a rustic, cozy wooden cabin kitchen during the golden hour. Sunbeams cut through a small multi-pane window, illuminating dust motes in the air. On a heavy oak table sits a fresh loaf of sourdough bread next to a steaming vintage porcelain teapot decorated with floral patterns. Jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, and a small vase of fresh wildflowers decorate the warm, inviting space."
+        "title": "SYSTEM_OVERLOAD.EXE",
+        "style": "Webcore",
+        "prompt": "Webcore aesthetic, 1990s desktop operating system GUI layout. cluttered windows, pixelated green glitch texture, retro cursor icons, old computer error popups. neon pink sparkling graphics, pixel art under construction banners, low-res vintage cyber-oasis internet world."
     },
     {
         "id": "painting-11",
         "title": "Playtime Protocol",
         "style": "Kidcore",
-        "prompt": "Kidcore aesthetic. A close-up, hyper-saturated bedroom scene drenched in primary colors. In the center, a retro translucent neon-green alarm clock with large, goofy purple numbers sits next to a glowing, active transparent purple electronic handheld pet game on a rainbow-striped bedsheet. The floor is cluttered with brightly colored plastic building blocks, a scattered deck of holographic trading cards, and a plush colorful toy. The sunlight streaming through the window is intense and cheerful, highlighting glitter textures in the air. The overall image has a nostalgic, loud, and joyful 1990s childhood afternoon vibe."
+        "prompt": "Kidcore aesthetic, hyper-saturated bedroom, primary colors. translucent neon-green alarm clock, goofy purple numbers, transparent purple electronic handheld pet game, rainbow-striped bedsheet. bright plastic building blocks, holographic trading cards, plush toy. intense sunlight, glitter textures, 1990s childhood vibe."
     },
     {
         "id": "painting-12",
-        "title": "Playtime Protocol",
-        "style": "Kidcore",
-        "prompt": "Kidcore aesthetic. A close-up, hyper-saturated bedroom scene drenched in primary colors. In the center, a retro translucent neon-green alarm clock with large, goofy purple numbers sits next to a glowing, active transparent purple electronic handheld pet game on a rainbow-striped bedsheet. The floor is cluttered with brightly colored plastic building blocks, a scattered deck of holographic trading cards, and a plush colorful toy. The sunlight streaming through the window is intense and cheerful, highlighting glitter textures in the air. The overall image has a nostalgic, loud, and joyful 1990s childhood afternoon vibe."
+        "title": "THE HARVEST IS PLENTIFUL",
+        "style": "Surreal Meme",
+        "prompt": "Surreal meme aesthetic, blank 3D mannequin head floating in deep space. corporate grid patterns, low-poly graphics, glowing geometric shapes. absurd nonsensical text overlay 'DO NOT TRUST THE BEANS', clipping artifacts. distorted vaporwave rendering, ironic cosmic humor, 2010s internet core."
     },
     {
         "id": "painting-13",
         "title": "Angular Horizon",
         "style": "Low Poly",
-        "prompt": "Low poly aesthetic. A beautiful, minimalist mountain landscape at sunset. The entire scene is constructed from large, visible, flat-shaded geometric triangles and polygons. A sharp, faceted river snakes through angular pine trees made of simple green pyramids. The sky features a gradient of low-polygon crystalline clouds shifting from deep orange to soft violet, with a low-res glowing sun casting sharp, blocky shadows across the geometric terrain."
+        "prompt": "low poly aesthetic, minimalist mountain landscape, sunset, flat-shaded geometric triangles polygons. sharp faceted river, angular pine trees, simple green pyramids. gradient crystalline clouds deep orange soft violet, low-res glowing sun, sharp blocky shadows geometric terrain"
     },
     {
         "id": "painting-14",
         "title": "The Atrium Eternal",
         "style": "Mallsoft",
-        "prompt": "Mallsoft aesthetic. A vast, multi-level indoor shopping mall atrium from the late 1980s, shot from a slightly low angle to emphasize scale. The architecture features soft pastel pink and mint green marble columns, with glowing neon pink accents running along the escalators. In the center, a multi-tiered indoor stone fountain gently splashes water, surrounded by lush potted ferns and palm trees. A massive glass pyramid skylight serves as the ceiling, showing a soft twilight purple sky outside. The entire scene has a warm, hazy, dreamy VHS quality, evoking a sense of ultimate nostalgia and retail luxury."
+        "prompt": "Mallsoft aesthetic, vast multi-level indoor shopping mall atrium, 1980s, low angle. pastel pink mint green marble columns, glowing neon pink escalator accents. center multi-tiered indoor stone fountain, lush potted ferns, palm trees. massive glass pyramid skylight ceiling, twilight purple sky. warm hazy dreamy VHS quality, ultimate nostalgia, retail luxury."
     },
     {
         "id": "painting-15",
         "title": "The Architecture of Silence",
         "style": "Minimalism",
-        "prompt": "Minimalism aesthetic. A pristine, empty white gallery space with a single, smooth, dark charcoal gray concrete bench positioned perfectly off-center. A vast expanse of smooth, matte white wall dominates the frame, interrupted only by a sharp, thin line of natural shadow cast by an unseen window. The floor is a seamless, light gray polished concrete. The lighting is soft, diffused, and natural, emphasizing clean lines, geometric simplicity, and an overwhelming sense of quiet, calm, and empty negative space."
+        "prompt": "Minimalism aesthetic, pristine empty white gallery space. smooth dark charcoal gray concrete bench, positioned off-center. vast expanse matte white wall, sharp thin natural window shadow line. seamless light gray polished concrete floor. soft diffused natural lighting, clean lines, geometric simplicity, quiet calm empty negative space."
     }
 ]

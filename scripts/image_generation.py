@@ -1,5 +1,4 @@
-﻿$code = @'
-import os
+﻿import os
 import json
 import torch
 from pathlib import Path
@@ -85,6 +84,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-'@
-
-Out-File -FilePath .\image_generation.py -InputObject $code -Encoding utf8
