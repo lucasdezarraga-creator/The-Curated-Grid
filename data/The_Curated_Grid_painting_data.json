@@ -1,0 +1,92 @@
+[
+    {
+        "id": "painting-1",
+        "title": "Midnight Beacon.exe",
+        "style": "Vaporwave",
+        "prompt": "Vaporwave aesthetic, lighthouse balcony view, looking down at beach, night. ocean waves, glowing neon teal, low-poly wireframe grid texture. brilliant pink purple neon beam shooting across dark water. digital violet sky, pixelated crescent moon. neon palm trees, pastel purple sand. 80s synthwave, retrowave style."
+    },
+    {
+        "id": "painting-2",
+        "title": "Aura of the New Dawn",
+        "style": "Fruitger Aero",
+        "prompt": "Frutiger Aero aesthetic, eco-futuristic city, pristine bright blue sky, wispy white clouds. hyper-glossy green grass hills, floating transparent glass spheres, oversized perfect water droplets. glistening turquoise stream, vibrant koi fish. sleek white glass skyscrapers, vertical gardens, clean solar glare, subtle lens flare. glossy textures, 2000s core."
+    },
+    {
+        "id": "painting-3",
+        "title": "The Hallway of Last Tuesday",
+        "style": "Dream Core",
+        "prompt": "Low-angle flash-photography, dream core style, empty endless hotel hallway, night. repeating confusing 1990s carpet, identical closed doors. flickering fluorescent overheads, sickly pale yellow glow. single simple blue balloon animal floating at ceiling. distorted perspective, stretching into infinite darkness. unsettling nostalgic liminal space, eerie mood"
+    },
+    {
+        "id": "painting-4",
+        "title": "System Reboot 1999",
+        "style": "Y2K",
+        "prompt": "Y2K futurism aesthetic, high-tech bedroom, late-1990s technology. translucent bright blue plastic desktop monitor, metallic silver desk. cool blue backlighting, glowing digital matrix codes on screens. cybernetic textures, glossy scattering CD-ROMs, inflatable furniture. optimistic millennial cyber-oasis vibe. retro-futuristic, cyberpunk 2000s core."
+    },
+    {
+        "id": "painting-5",
+        "title": "Neon Resistor",
+        "style": "Cyberpunk",
+        "prompt": "Cyberpunk aesthetic, rain-slicked narrow alleyway, hyper-dense futuristic metropolis, night. colossal neon billboards, vivid pink electric blue toxic green, reflecting in puddles, cracked asphalt. street-level hacker, dark tech-wear jacket, cybernetic visor. glowing heavily modified vending machine. drones humming, crowded cables-tangled apartment blocks, dystopian cityscape."
+    },
+    {
+        "id": "painting-6",
+        "title": "Datamoshed Memory",
+        "style": "Glitchcore",
+        "prompt": "High-contrast maximalist Glitchcore portrait, digital face, corrupted data. neon pink electric blue harsh yellow pixel blocks, scanline interference, datamoshing. glowing pixel-sorted static eyes. flashing grid background, text ERROR 404, CORRUPTED MEMORY. chaotic noisy pixelated distorted VHS style."
+    },
+    {
+        "id": "painting-7",
+        "title": "The Echo of Departure",
+        "style": "Liminal Spaces",
+        "prompt": "Liminal space aesthetic, empty vast indoor shopping mall, 1990s, night, symmetrical straight-on perspective. high-gloss white floor tiles, soft pale fluorescent reflections. dark shuttered storefronts, no people. center frame lonely concrete planter, single artificial plastic palm tree. washed-out low-quality flash photography lighting, deeply nostalgic quiet eerie atmosphere."
+    },
+    {
+        "id": "painting-8",
+        "title": "The Mossy Monarch",
+        "style": "Frogcore",
+        "prompt": "Frogcore aesthetic, detailed macro shot, close-up bright green tree frog. frog wearing tiny acorn cap crown, sitting on thick vibrant patch of wet moss, tiny wild mushroom. background soft rain drops, gentle ripples in shallow puddle. dense forest floor, softly blurred bokeh, warm dappled sunlight filtering through fern leaves."
+    },
+    {
+        "id": "painting-9",
+        "title": "The Hearthside Solace",
+        "style": "Cottagecore",
+        "prompt": "Cottagecore aesthetic, cozy rustic wooden cabin kitchen interior, golden hour. sunbeams cutting through small multi-pane window, illuminating dust motes. heavy oak table, fresh sourdough bread loaf, steaming vintage floral porcelain teapot. jars of preserved fruits, dried herb bundles hanging from exposed ceiling beams, fresh wildflowers. warm inviting atmosphere."
+    },
+    {
+        "id": "painting-10",
+        "title": "SYSTEM_OVERLOAD.EXE",
+        "style": "Webcore",
+        "prompt": "Webcore aesthetic, 1990s desktop operating system GUI layout. cluttered windows, pixelated green glitch texture, retro cursor icons, old computer error popups. neon pink sparkling graphics, pixel art under construction banners, low-res vintage cyber-oasis internet world."
+    },
+    {
+        "id": "painting-11",
+        "title": "Playtime Protocol",
+        "style": "Kidcore",
+        "prompt": "Kidcore aesthetic, hyper-saturated bedroom, primary colors. translucent neon-green alarm clock, goofy purple numbers, transparent purple electronic handheld pet game, rainbow-striped bedsheet. bright plastic building blocks, holographic trading cards, plush toy. intense sunlight, glitter textures, 1990s childhood vibe."
+    },
+    {
+        "id": "painting-12",
+        "title": "THE HARVEST IS PLENTIFUL",
+        "style": "Surreal Meme",
+        "prompt": "Surreal meme aesthetic, blank 3D mannequin head floating in deep space. corporate grid patterns, low-poly graphics, glowing geometric shapes. absurd nonsensical text overlay 'DO NOT TRUST THE BEANS', clipping artifacts. distorted vaporwave rendering, ironic cosmic humor, 2010s internet core."
+    },
+    {
+        "id": "painting-13",
+        "title": "Angular Horizon",
+        "style": "Low Poly",
+        "prompt": "Low poly aesthetic, minimalist mountain landscape, sunset, flat-shaded geometric triangles polygons. sharp faceted river, angular pine trees, simple green pyramids. gradient crystalline clouds deep orange soft violet, low-res glowing sun, sharp blocky shadows geometric terrain"
+    },
+    {
+        "id": "painting-14",
+        "title": "The Atrium Eternal",
+        "style": "Mallsoft",
+        "prompt": "Mallsoft aesthetic, vast multi-level indoor shopping mall atrium, 1980s, low angle. pastel pink mint green marble columns, glowing neon pink escalator accents. center multi-tiered indoor stone fountain, lush potted ferns, palm trees. massive glass pyramid skylight ceiling, twilight purple sky. warm hazy dreamy VHS quality, ultimate nostalgia, retail luxury."
+    },
+    {
+        "id": "painting-15",
+        "title": "The Architecture of Silence",
+        "style": "Minimalism",
+        "prompt": "Minimalism aesthetic, pristine empty white gallery space. smooth dark charcoal gray concrete bench, positioned off-center. vast expanse matte white wall, sharp thin natural window shadow line. seamless light gray polished concrete floor. soft diffused natural lighting, clean lines, geometric simplicity, quiet calm empty negative space."
+    }
+]
