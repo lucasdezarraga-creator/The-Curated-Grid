@@ -1,5 +1,7 @@
 # 🎨 The Curated Grid: Interactive Museum Gallery
 
+![Exhibition Gallery Preview](./public/images/TheCuratedGrid.gif)
+
 A highly polished, responsive web application designed to simulate a high-end modern art exhibition. This interactive platform features a physical wood-frame canvas simulation alongside a minimalist museum-style label placard that provides context for dynamically fetched AI-curated artworks.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
