@@ -1,148 +1,236 @@
+/* ==========================================
+   MAIN CAROUSEL CORE VIEWPORT
+========================================== */
+.Carousel_Wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
 .Nav_Arrow {
-  background: rgba(255, 255, 255, 0.9); /* Creamy white button */
-  border: 1px solid rgb(225, 220, 212);  /* Edge trim matching your molding */
-  font-size: 2rem;                     /* Makes the ‹ or › symbol large */
-  width: 50px;                         /* Perfect square dimensions */
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgb(225, 220, 212);
+  font-size: 2rem;
+  width: 50px;
   height: 50px;
-  border-radius: 50%;                  /* Turns the square into a circle */
+  border-radius: 50%;
   cursor: pointer;
-  
-  /* Centers the arrow symbol perfectly inside the circle */
   display: flex;
   align-items: center;
   justify-content: center;
-  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   position: absolute;
   z-index: 12;
-
   top: 50%;
   transform: translateY(-50%);
 }
 
-.Left_Arrow{
-    left: 40px;
-}
-
-.Right_Arrow{
-    right: 40px;
-}
+.Left_Arrow { left: 40px; }
+.Right_Arrow { right: 40px; }
 
 .Pagination_Dots {
   position: absolute;
   display: flex;
-  gap: 10px;               /* Puts a clean space between each dot */
-  justify-content: center; /* Centers the row of dots on the screen */
-  bottom: 15vh;
-  left: 0;
-  width: 100%;
-  z-index: 12;
+  gap: 10px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .Dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: rgb(140, 133, 125); /* Darker stone tone than the wall */
-  border-radius: 50%;                  /* Makes it a small circle */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
-/* The specific dot representing the painting currently on screen */
-.Dot.Active_Dot {
-  background-color: rgb(245, 242, 237); /* Matches your creamy molding accent */
-  transform: scale(1.2);                /* Makes it pop out slightly */
+.Active_Dot {
+  background-color: #333;
 }
 
-/* 1. THE STAGE: Stretch this container across the middle zone of the room */
+/* FIX: Centered viewport wrapper across the exact dead-center 
+   of the gallery background scene 
+*/
 .PaintingArea {
   position: absolute;
-  top: 10vh;             /* Starts right below the top molding */
-  bottom: 10vh;          /* Ends right above the bottom molding */
-  left: 120px;           /* Gives padding so paintings don't clip through the arrows */
-  right: 120px;
-  
-  /* The Secret Sauce: Turns the stage into a flex layout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center; /* Centers the painting horizontally */
-  align-items: center;     /* Centers the painting vertically */
-  touch-action: pan-y;
+  align-items: center;      /* Vertically centers layout on screen */
+  justify-content: center;  /* Horizontally centers layout on screen */
+  z-index: 5;
+  box-sizing: border-box;
 }
 
-/* 2. THE CANVAS: Style the actual frame holding your content */
+/* ==========================================
+   DESKTOP VIEW: HORIZONTAL SIDE-BY-SIDE Layout
+========================================== */
+.Gallery_Display_Group {
+  display: flex;
+  flex-direction: row;     /* Side-by-side on desktop */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;               
+  max-width: 90%;
+  max-height: 85vh;
+}
+
+/* Elegant Physical Gallery Studio Border Framing */
 .Painting {
-  background-color: #eae6df; /* Slightly lighter gallery linen color */
-  border: 4px solid #333;    /* A sharp dark frame for contrast */
-  padding: 40px;             /* Space inside the frame for your text/images */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Drop shadow so it hangs dimensionally */
-  
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #333;
-
-  /* NEW: Prevents the frame from blowing past the arrow boundaries */
-  max-width: 100%;
-  max-height: 100%;
-  display: flex; /* Ensures the inner image aligns perfectly inside the frame */
+  background: #f7f5f0;     /* Linen matte mounting background color */
+  padding: 18px;           
+  border: 18px solid #fff; /* Crisp white physical wooden framing build */
+  border-radius: 2px;
+  box-shadow: 
+    0 18px 40px rgba(0, 0, 0, 0.22), 
+    inset 0 0 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;          /* Prevents frame compression */
 }
 
-/* 3. THE IMAGE: Control the painting dimensions */
 .Painting img {
-  /* Set your desired size here (e.g., 50% or 400px). Adjust this value to shrink/grow */
   max-width: 500px; 
-  max-height: 60vh; 
-  
+  max-height: 55vh; 
   width: auto;
   height: auto;
-  object-fit: contain; /* Keeps aspect ratio perfect, no stretching */
+  object-fit: contain;
   display: block;
 }
 
+/* Left-Side Placard Label Box */
+.Title_Drawer {
+  background: rgba(245, 242, 237, 0.96); 
+  border-left: 4px solid #333; 
+  padding: 16px 20px;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  max-width: 320px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Metadata_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.Title_Block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.Title {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.Style {
+  font-family: sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #70685e;
+  font-weight: bold;
+}
+
+.Info_Toggle_Btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none; /* Auto-hidden on desktop devices */
+}
+
+.Prompt {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #4a4540;
+  margin: 12px 0 0 0;
+  font-weight: normal;
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE OVERRIDES
+========================================== */
 @media (max-width: 768px) {
-  
   .Nav_Arrow {
-    display: none;     /* Automatically hide arrows on phones */
+    display: none !important;
   }
 
   .Pagination_Dots {
-    display: flex;     /* Automatically reveal swipe tracking dots */
-  }
-  
-  .Active_Painting {
-    max-height: 300px; /* Shrink the painting framework down for small screens */
+    display: flex !important;
+    bottom: 20px;
   }
 
-  .PaintingArea {
-    /* Reduce the massive side gaps so the painting has room to exist */
-    left: 20px;
-    right: 20px;
-    top: 12vh;
-    bottom: 12vh;
+  /* Stack layout top-to-bottom on mobile viewports */
+  .Gallery_Display_Group {
+    flex-direction: column !important; 
+    gap: 20px !important;
+    width: 100% !important;
+    max-height: 90vh;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
+  /* Visual order alignment logic */
   .Painting {
-    /* Scale down the massive frame padding so it doesn't swallow the screen */
-    padding: 16px; 
-    border-width: 3px; /* Slightly thinner frame looks cleaner on mobile */
-    
-    /* Ensure it centers the inner image perfectly */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    order: 1; 
+    padding: 10px !important; 
+    border-width: 10px !important; /* Scale frame down cleanly on phones */
+  }
+
+  .Title_Drawer {
+    order: 2; /* Moves info box cleanly below the artwork */
+    max-width: 340px !important;
+  }
+
+  .Info_Toggle_Btn {
+    display: block !important;
+  }
+
+  .Metadata_Header {
+    cursor: pointer;
+  }
+
+  /* Collapsible content handling blocks */
+  .Title_Drawer:not(.expanded) .Prompt {
+    display: none !important;
+    margin: 0 !important;
+  }
+
+  .Title_Drawer.expanded .Prompt {
+    display: block !important;
+    border-top: 1px dashed #ccc;
+    padding-top: 8px;
+    max-height: 120px;
+    overflow-y: auto;
   }
 
   .Painting img {
-    /* Force the image to elegantly scale down and fit the narrow container */
-    max-width: 100%;
-    max-height: 50vh;
-    object-fit: contain;
-  }
-
-  /* Bonus: Shrink the nav arrows slightly so they don't overlap the art */
-  .Nav_Arrow {
-    padding: 0.5rem 0.8rem;
-    font-size: 1.2rem;
+    max-width: 100% !important;
+    max-height: 40vh !important;
+    width: auto !important;
+    height: auto !important;
   }
 }
