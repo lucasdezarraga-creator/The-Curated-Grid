@@ -13,7 +13,7 @@ export function Carousel() {
     const minSwipeDistance = 50;
 
     useEffect(() => {
-        fetch('/data/The_Curated_Grid_painting_data.json')
+        fetch('./data/The_Curated_Grid_painting_data.json')
             .then((response) => response.json())
             .then((data) => setPaintingsData(data))
             .catch((error) => console.error("Error loading gallery metadata:", error));
@@ -75,7 +75,7 @@ export function Carousel() {
 
                     {/* 2. The Framed Artwork sits on the right */}
                     <div className='Painting'>
-                        <img src={`/images/painting-${paintingID}.png`} alt={`Aesthetic ${paintingID}`} />
+                        <img src={`./images/painting-${paintingID}.png`} alt={`Aesthetic ${paintingID}`} />
                     </div>
 
                 </div>
