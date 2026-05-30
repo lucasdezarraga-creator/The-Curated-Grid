@@ -27,12 +27,14 @@ A highly polished, responsive web application designed to simulate a high-end mo
 
 ---
 
+## Special Thanks
+Thank you Google, Google Gemini, Diffuser, and Aesthetics Wiki for the help!
+
+---
+
 ## 📁 Repository Directory Structure
 
 ```text
 ├── public/
 │   ├── data/
 │   │   └── The_Curated_Grid_painting_data.json  # Cur
-
-## Special Thanks
-Thank you Google, Google Gemini, Diffuser, and Aesthetics Wiki for the help!
