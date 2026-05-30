@@ -1,0 +1,98 @@
+.Nav_Arrow {
+  background: rgba(255, 255, 255, 0.9); /* Creamy white button */
+  border: 1px solid rgb(225, 220, 212);  /* Edge trim matching your molding */
+  font-size: 2rem;                     /* Makes the ‹ or › symbol large */
+  width: 50px;                         /* Perfect square dimensions */
+  height: 50px;
+  border-radius: 50%;                  /* Turns the square into a circle */
+  cursor: pointer;
+  
+  /* Centers the arrow symbol perfectly inside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  z-index: 12;
+
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Left_Arrow{
+    right: 40px;
+}
+
+.Right_Arrow{
+    left: 40px;
+}
+
+.Pagination_Dots {
+  position: absolute;
+  display: flex;
+  gap: 10px;               /* Puts a clean space between each dot */
+  justify-content: center; /* Centers the row of dots on the screen */
+  bottom: 15vh;
+  left: 0;
+  width: 100%;
+  z-index: 12;
+}
+
+.Dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(140, 133, 125); /* Darker stone tone than the wall */
+  border-radius: 50%;                  /* Makes it a small circle */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* The specific dot representing the painting currently on screen */
+.Dot.Active_Dot {
+  background-color: rgb(245, 242, 237); /* Matches your creamy molding accent */
+  transform: scale(1.2);                /* Makes it pop out slightly */
+}
+
+/* 1. THE STAGE: Stretch this container across the middle zone of the room */
+.PaintingArea {
+  position: absolute;
+  top: 10vh;             /* Starts right below the top molding */
+  bottom: 10vh;          /* Ends right above the bottom molding */
+  left: 120px;           /* Gives padding so paintings don't clip through the arrows */
+  right: 120px;
+  
+  /* The Secret Sauce: Turns the stage into a flex layout */
+  display: flex;
+  justify-content: center; /* Centers the painting horizontally */
+  align-items: center;     /* Centers the painting vertically */
+}
+
+/* 2. THE CANVAS: Style the actual frame holding your content */
+.Painting {
+  background-color: #eae6df; /* Slightly lighter gallery linen color */
+  border: 4px solid #333;    /* A sharp dark frame for contrast */
+  padding: 40px;             /* Space inside the frame for your text/images */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Drop shadow so it hangs dimensionally */
+  
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  
+  .Nav_Arrow {
+    display: none;     /* Automatically hide arrows on phones */
+  }
+
+  .Pagination_Dots {
+    display: flex;     /* Automatically reveal swipe tracking dots */
+  }
+  
+  .Active_Painting {
+    max-height: 300px; /* Shrink the painting framework down for small screens */
+  }
+}
